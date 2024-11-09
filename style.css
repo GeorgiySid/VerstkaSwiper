@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'TT Lakes',sans-serif;
+    background-color: #F8F8F8;
+}
+header{
+    display:flex;
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    border-top:2px solid #D9FFF5;
+}
+.header__title{
+    font-size: 16px;
+    color:#7E7E82;
+    padding-left:10px;
+}
+.menu{
+    display: none;
+}
+.menu-swiper{
+    display: flex;
+    padding-left: 10px;
+    padding-top: 10px;
+    overflow:hidden;
+}
+.menu__logoCont-swiper .menu__logoElement-swiper{
+    display: flex;
+    width: 240px;
+    height: 72px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    border: 1px solid #EAEAEA;
+}
+.menu__logoButton{
+    border:2px solid #FF3E79;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-image: url(ic/dropdown.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+    transition-duration: 0.5s;
+}
+.menu__logoButton:active{
+    opacity: 0.5;
+    transform: scale(0.5);
+}
+.menu__logoPic{
+    max-width: 50%;
+    padding-left: 10px;
+}
+#SwiperTop{
+    top:200px;
+}
+.readMore-button{
+    display:none;
+}
+.readMore-button-descrip{
+    display: none;
+}
+.readMore-button:active{
+    opacity: 0.5;
+    transform: scale(0.5);
+}
+.menu-swiper .swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+    font-size: 14px;
+    background-color: #B5B6BC;
+}
+@media screen and (min-width: 768px){
+    .menu-swiper{
+        display: none;
+    }
+    .menu{
+        display: grid;
+        overflow: hidden;
+    }
+    .readMore-button{
+        display: flex;
+        font-family:'TT Lakes',sans-serif ;
+        position: relative;
+        font-size:16px;
+        font-weight: 500;
+        width: auto;
+        display: flex;
+        justify-self: start;
+        align-items: center;
+        margin-left:30px;
+        color:#1B1C21;
+        column-gap:5px;
+        margin-top:10px;
+        border:0;
+        background-color: #F8F8F8;
+        transition-duration: 0.5s;
+    }
+    .readMore-button::before{
+        display: flex;
+        content:"";
+        background-image: url(ic/expand.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top:center;
+        left:-15px;
+    }
+    .readMore-button-descrip{
+        display: flex;
+    }
+    .menu .menu__logoElement{
+        display: flex;
+        max-width: 224px;
+        height: 72px;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FFFFFF;
+        border-radius: 6px;
+        border: 1px solid #EAEAEA;
+
+    }
+    .menu .menu__logoCont{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:15px;
+        height:165px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
+@media screen and (min-width:1120px) {
+    body{
+        max-width: 1120px;
+        margin-left: auto;
+        margin-right:auto ;
+    }
+    .menu .menu__logoCont{
+        max-width:1120px ;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
