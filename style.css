@@ -15,15 +15,12 @@ header{
     padding-left:10px;
 }
 .menu{
-    display: none;
-}
-.menu-swiper{
     display: flex;
-    padding-left: 10px;
+    margin-left:10px;
     padding-top: 10px;
     overflow:hidden;
 }
-.menu__logoCont-swiper .menu__logoElement-swiper{
+.menu__logoCont .menu__logoElement{
     display: flex;
     width: 240px;
     height: 72px;
@@ -65,16 +62,13 @@ header{
     opacity: 0.5;
     transform: scale(0.5);
 }
-.menu-swiper .swiper-pagination-bullet{
+.menu .swiper-pagination-bullet{
     width: 12px;
     height: 12px;
     font-size: 14px;
     background-color: #B5B6BC;
 }
 @media screen and (min-width: 768px){
-    .menu-swiper{
-        display: none;
-    }
     .menu{
         display: grid;
         overflow: hidden;
@@ -127,10 +121,11 @@ header{
         padding-top: 20px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap:15px;
+        column-gap:5px;
+        row-gap:10px;
         height:165px;
-        margin-left: 20px;
         margin-right: 20px;
+        margin-left:10px;
     }
 
 }
