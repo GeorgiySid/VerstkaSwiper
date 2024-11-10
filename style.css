@@ -19,6 +19,7 @@ header{
     margin-left:10px;
     padding-top: 10px;
     overflow:hidden;
+    transition-duration: 1s;
 }
 .menu__logoCont .menu__logoElement{
     display: flex;
@@ -91,7 +92,7 @@ header{
         background-color: #F8F8F8;
         transition-duration: 0.5s;
     }
-    .readMore-button::before{
+    .readMore-button-expand{
         display: flex;
         content:"";
         background-image: url(ic/expand.svg);
@@ -102,6 +103,8 @@ header{
         position: absolute;
         top:center;
         left:-15px;
+        transform: rotate(0deg);
+        transition-duration: 0.2s;
     }
     .readMore-button-descrip{
         display: flex;
